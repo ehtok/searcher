@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    liquibase:
+change-log:
+  jpa:
+    hibernate:
+      ddl-auto: none
+logging:
+level:
+  root: info
+  by.searcher: debug
